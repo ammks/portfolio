@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>タイトル</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<!-- フォント -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+<!-- ビューポート -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--jQuery本体-->
+<script src="js/jquery-1.11.2.min.js"></script>
+
+<!--ready関数-->
+<script>
+$(function(){
+
+});
+</script>
+<!-- カーソル -->
+<script>
+  const cursor = document.querySelector(".cursor");
+
+  window.addEventListener("mousemove", (e) => {
+    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+  });
+</script>
+</head>
+
+<body class="wrapper">
+    <!-- ヘッダー -->
+    <header>
+        <!-- グローバルナビ -->
+        <div class="header-inner">
+            <div class="logo">
+                <a href="index.html">
+                <img src="img/header_logo.png" alt="ayanoの顔イラスト" width="842" height="595">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="works/index.html">WORKS</a></li>
+                    <li><a href="profile/index.html">PROFILE</a></li>
+                    <li><a href="blog/index.html">BLOG</a></li>
+                    <li><a href="contact/index.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="fv">
+        <div class="fv-left">
+            <h2 class="title">
+            <span class="port">PORT</span><span class="folio">FOLIO</span>
+            </h2>
+            <div class="name">
+            <p class="main">AOKI AYANO</p>
+            <p class="sub">Web Design, Graphic Design</p>
+            </div>
+        </div>
+
+        <div class="fv-right">
+            <img src="img/fv_logo.png" alt="顔のイラスト">
+        </div>
+    </section>
+    <!-- メイン -->
+    <main>
+        <!-- セクション諸々 -->
+        <!-- about -->
+        <section class="about">
+            <h2>お客様の課題を解決し、ユーザーに寄り添うデザインを</h2>
+            <h3>デザイナーとして<br>人の心を動かす仕事に挑戦し続けていきたい</h3>
+        </section>
+        <!-- works -->
+        <section class="top-works">
+            <h1>works</h1>
+            <div class="works-grid">
+                <div class="work-item">
+                    <a class="works-more-btn" href="＃">
+                    <img class="works-grid-img" src="img/works_ring.png" alt="指輪サイトのTOP画面" width="707" height="530">
+                    </a>
+                    <p>ハワイアンジュエリーサイト</p>
+                </div>
+                <div class="work-item">
+                    <a class="works-more-btn" href="＃">
+                    <img class="works-grid-img" src="img/works_ring.png" alt="ポートフォリオサイトのTOP画面" width="707" height="530">
+                    </a>
+                    <p>ポートフォリオサイト</p>
+                </div>
+                <div class="work-item">
+                    <a class="works-more-btn" href="＃">
+                    <img class="works-grid-img" src="img/works_urayasu.png" alt="浦安市のサイクリングジャージ" width="707" height="530">
+                    </a>
+                    <p>浦安市様のサイクリングジャージ</p>
+                </div>
+                <div class="work-item">
+                    <a class="works-more-btn" href="＃">
+                    <img class="works-grid-img" src="img/works_wine.png" alt="ワインラベル" width="707" height="530">
+                    </a>
+                    <p>ワインラベル＆ショッパー</p>
+                </div>
+                <div class="work-item">
+                    <a class="works-more-btn">
+                    <img class="works-grid-img" src="img/works_bar.png" alt="barのリーフレット" width="707" height="530">
+                    </a>
+                    <p>カクテルbarリーフレット</p>
+                </div>
+                <div class="work-item">
+                    <a class="works-more-btn" href="＃">
+                    <img class="works-grid-img" src="img/works_card.png" alt="名刺" width="707" height="530">
+                    </a>
+                    <p>名刺</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-left">
+            <a href="index.html">
+            <img src="img/footer_logo.png" alt="顔のロゴイラスト" width="156" height="157">
+            </a>
+        </div>
+            <div class="footer-center">
+                <nav>
+                    <ul>
+                        <li><a href="works/index.html">WORKS</a></li>
+                        <li><a href="profile/index.html">PROFILE</a></li>
+                        <li><a href="blog/index.html">BLOG</a></li>
+                        <li><a href="contact/index.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="copy">©2025 aokiyayano</p>
+        </div>           
+
+    </footer>
+
+</body>
+
+</html>

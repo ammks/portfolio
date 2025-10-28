@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>タイトル</title>
+<link href="../../css/reset.css" rel="stylesheet">
+<link href="../../css/style.css" rel="stylesheet">
+<!-- フォント -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+<!-- ビューポート -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--jQuery本体-->
+<script src="js/jquery-1.11.2.min.js"></script>
+
+<!--ready関数-->
+<script>
+$(function(){
+
+});
+</script>
+<!-- カーソル -->
+<script>
+  const cursor = document.querySelector(".cursor");
+
+  window.addEventListener("mousemove", (e) => {
+    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+  });
+</script>
+</head>
+
+<body class="wrapper">
+    <!-- ヘッダー -->
+    <header>
+        <!-- グローバルナビ -->
+        <div class="header-inner">
+            <div class="logo">
+                <a href="../../index.html">
+                <img src="../../img/header_logo.png" alt="ayanoの顔イラスト" width="842" height="595">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../../works/index.html">WORKS</a></li>
+                    <li><a href="../../profile/index.html">PROFILE</a></li>
+                    <li><a href="../../blog/index.html">BLOG</a></li>
+                    <li><a href="../../contact/index.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- メイン -->
+    <main>
+
+        
+    </main>
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-left">
+            <a href="../../index.html">
+            <img src="../../img/footer_logo.png" alt="顔のロゴイラスト" width="156" height="157">
+            </a>
+        </div>
+        <div class="footer-center">
+            <nav>
+                <ul>
+                    <li><a href="../../works/index.html">WORKS</a></li>
+                    <li><a href="../../profile/index.html">PROFILE</a></li>
+                    <li><a href="../../blog/index.html">BLOG</a></li>
+                    <li><a href="../../contact/index.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+            <p class="copy">©2025 aokiyayano</p>
+        </div>           
+
+    </footer>
+
+</body>
+
+</html>
