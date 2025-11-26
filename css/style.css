@@ -2,18 +2,18 @@
 /* CSS Document */
 /* フルードイメージ */
 img{max-width: 100%;height:auto;}
-
-/* 共通 */
+/* ------------------共通------------------
+---------------------------------------- */
 h1{
     color:#494544;
     font-family: "Inter", sans-serif;
-    font-weight: 900;
-    font-style: normal;
+    font-weight: 700;
+    font-style: bold;
     font-size: 36px;
 }
 h2{
     color:#494544;
-    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 600;
     font-style: bold;
     font-size: 24px;
@@ -21,8 +21,15 @@ h2{
 h3{
     color:#494544;
     font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+    font-size: 24px;
+}
+h4{
+    color:#494544;
+    font-family: "Zen Kaku Gothic New", sans-serif;
     font-weight: 500;
-    font-style: medium;
+    font-style: bold;
     font-size: 18px;
 }
 p{
@@ -41,15 +48,48 @@ a:link{text-decoration: none;color:#494544;}
 a:visited {text-decoration: none;color:#494544;}
 a:hover{text-decoration: none;color: #c41a30;}
 a:active {text-decoration: none;color: #c41a30;}
-
 .wrapper {
     max-width: 1920px;
     margin: 0 auto;
+    background-color: #fff;
+}
+/* ボタン */
+.btn-area {
+  text-align: center; 
+}
+a.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  min-width: 140px;
+  font-weight: bold;
+  border: 2px solid #C41A30;
+  background: #fff;
+  color: #C41A30;
+  border-radius: 100vh;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+a.btn:hover {
+	color: #fff;
+	background: #C41A30;
+}
+/* タイトル */
+.title{
+  width: 100%;
+  padding: 6.25% 0 5.21% 0;  
+}
+.title h1{
+  text-align: center;
 }
 /* ヘッダー */
 header{
-    background: transparent; /* 透過 */
-    padding: 1%;
+  width: 100%;
+  position: fixed;
+}
+.logo h2{
+    font-size: 16px;
 }
 .header-inner{
     width: 100%;
@@ -58,9 +98,7 @@ header{
     justify-content: center;
     align-items:center;
     gap: 5%;
-}
-.logo img{
-  width: 25%;
+    padding: 0 3%;
 }
 nav{
     width: 100%;
@@ -75,85 +113,131 @@ nav ul{
 nav ul li{
     color: #494544;
     font-family: "Inter", sans-serif;
-    font-weight: normal;
+    font-weight: 600;
+    font-weight: bold;
+    font-size: 16px;
 }
+/* ------------------top------------------
+---------------------------------------- */
 /* fv */
-.fv {
-  display: flex;
+.fv{
   width: 100%;
-  height: 100vh; /* 画面いっぱい */
+  height: 100vh;
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.fv-left {
-  width: 35%;
-  background-color: #C41A30; /* ワインレッド */
-  color: #fff;
+.fv-text{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 6%;
+  align-items: start;
+  gap: 25%;
 }
-.fv-right {
-  width: 65%;
-  background-color: #494544; /* チャコールグレー */
-  position: relative;
-}
-.title {
-  font-family: 'Inter', sans-serif;
-  font-size: 72px;
+.fv-text-main {
+  font-size: 76px;
   font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  margin: 0;
+  color: #494544; 
+  letter-spacing: 4px;
 }
-.port {
-  color: #494544;
-  text-align: end;
+.fv-text-main span {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(10px);
+  animation: fadeColorUp 0.8s ease forwards;
 }
-.folio {
-  color: #fff;
-  text-align: start;
+.fv-text-main span:nth-child(1) { animation-delay: 0s; }
+.fv-text-main span:nth-child(2) { animation-delay: 0.1s; }
+.fv-text-main span:nth-child(3) { animation-delay: 0.2s; }
+.fv-text-main span:nth-child(4) { animation-delay: 0.3s; }
+.fv-text-main span:nth-child(5) { animation-delay: 0.4s; }
+.fv-text-main span:nth-child(6) { animation-delay: 0.5s; }
+.fv-text-main span:nth-child(7) { animation-delay: 0.6s; }
+.fv-text-main span:nth-child(8) { animation-delay: 0.7s; }
+.fv-text-main span:nth-child(9) { animation-delay: 0.8s; }
+@keyframes fadeColorUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+    color: #C41A30;
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0);
+    color: #C41A30;
+  }
+  100% {
+    opacity: 1;
+    color: #494544;
+  }
 }
-.name .main {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.2;
-  color: #fff;
+/* 回転動き */
+.fv-flip {
+  width: 330px;                 
+  aspect-ratio: 1 / 1;          
+  perspective: 1000px;          
 }
-.name .sub {
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.05em;
-  margin-top: 8px;
-  color: #fff;
+.fv-flip-inner {
+  position: relative;           
+  width: 100%;                 
+  height: 100%;                
+  transform-style: preserve-3d; 
+  animation: flip360 5s linear infinite; 
+  transition: transform 1s ease; 
 }
-.fv-right img {
-  position: absolute;
-  bottom: 0;
-  right: 8%;
-  width: 30%;
-  max-width: 420px;
-  opacity: 0.85;
+.fv-flip:hover .fv-flip-inner {
+  animation-play-state: paused; 
+  cursor: pointer;
+}
+.fv-flip-front,
+.fv-flip-back {
+  position: absolute;          
+  width: 100%;                  
+  height: 100%;                 
+  backface-visibility: hidden; 
+}
+.fv-flip-front img,
+.fv-flip-back img {
+  width: 100%;                 
+  height: 100%;                 
+  object-fit: contain;
+  object-position: center;         
+}
+.fv-flip-front img {
+  transform: scale(1.5);
+}
+.fv-flip-back {
+  transform: rotateY(180deg); 
+}
+@keyframes flip360 {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 /* top-about */
 .about{
   width: 100%;
-  background-color: #FBF6F7;
-  padding: 10%;
 }
-.about h2{
-  text-align: center;
-  padding-bottom: 2%;
+.about .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
-.about h3{
-  text-align: center;
+.about .text h4{
+  margin-bottom: 2%;
+}
+.btn-area{
+  margin-bottom: 6.25%;
 }
 /* top-works */
 .top-works{
-  margin-bottom: 5%;  
-}
-.top-works h1{
-  text-align: center;
-  margin: 6% 0 3% 0;
+  background-color: #FBF6F7; 
 }
 .top-works p{
   margin-top: 2%;
@@ -162,12 +246,13 @@ nav ul li{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 60px 40px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px
 }
 .works-grid-img {
   width: 100%;
+  height: 400px;
+  object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -175,6 +260,24 @@ nav ul li{
 .works-grid-img:hover {
   transform: scale(1.08);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); 
+}
+.tag-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 5px 0;
+}
+.tag {
+  display: inline-flex;            
+  justify-content: center;
+  align-items: center;
+  width: 110px;               
+  height: 30px;                     
+  background-color: #C41A30;      
+  color: #fff;                   
+  letter-spacing: 0.05em;
+  font-size: 12px;
+  text-align: center;
 }
 /* フッター */
 footer{

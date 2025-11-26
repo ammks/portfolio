@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>KAKISEN. | CART</title>
+<link href="../../css/reset.css" rel="stylesheet">
+<link href="../../css/style.css" rel="stylesheet">
+<!-- フォント -->
+<!-- Shippori Mincho -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@700&display=swap" rel="stylesheet">
+<!-- Noto Sans JP -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+<!-- Gravitas On -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
+<!-- Inknut Antiqua -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- ビューポート -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--jQuery本体-->
+<script src="js/jquery-1.11.2.min.js"></script>
+
+<!--ready関数-->
+<script>
+$(function(){
+
+});
+</script>
+
+</head>
+
+<body class="wrapper"  id="cart">
+    <!-- ヘッダー -->
+    <header>
+        <div class="header-logo">
+            <a href="../../index.html"><img src="../../img/top-header-logo.png" alt="kakisen.ロゴ" width="119" height="51"></a>
+        </div>
+        <div class="header-menu">
+            <div class="menu-btn" id="menu-btn">
+                <span class="menu-text">MENU</span>
+                <div class="menu-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                </div>
+            </div>
+        </div>
+        <!-- グローバルナビ -->
+        <div id="global-nav" class="nav-overlay">
+            <div class="close-btn" id="menu-close">
+                <span class="close-line line1"></span>
+                <span class="close-line line2"></span>
+            </div>
+            <nav class="nav-content">
+                <ul>
+                    <a href="../../01about/index.html"><li data-pattern="top-about-bg">ABOUT</li></a>
+                    <a href="../../02product/index.html"><li data-pattern="top-product-bg">PRODUCT</li></a>
+                    <a href="../../03online/index.html"><li data-pattern="top-online-bg">ONLINE SHOP</li></a>
+                    <a href="../../04access/index.html"><li data-pattern="top-access-bg">ACCESS</li></a>
+                </ul>  
+                <div id="pattern-bg">
+                </div>      
+            </nav>
+        </div>
+    </header>
+    <div class="header-tile"><img src="../../img/product-tile-1-ver.2.png" alt=""></div>
+    <!-- メイン -->
+    <main>
+        <!-- セクション諸々 -->
+        <div class="title">
+            <img src="../../img/title-icon.png" alt="正方形の柄" width="34" height="34">
+            <h3>CART</h3>
+        </div>
+        <section class="wrapper cart">
+            <div class="item-area">
+                <div class="item">
+                    <div class="img-area">
+                        <img src="../../img/online-kakisen-salt.png" alt="KAKISEN.Salt味">
+                    </div>
+                    <div class="content-area">
+                        <h4>Salt</h4>
+                        <p class="contents">2枚入り×各8袋</p>
+                        <div class="inner">
+                            <p class="price">￥1,600(税込)</p>
+                            <div class="number-toCart-btn container">
+                                <div class="number-btn-outer">
+                                    <button class="minus"></button>
+                                    <p class="counter">1</p>
+                                    <button class="plus"></button>
+                                </div>
+                                <div class="delete">削除</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="price-area">
+                <div class="inner price">
+                    <div class="item">
+                        <div>商品</div>
+                        <div>1,500円</div>
+                    </div>
+                    <div class="item">
+                        <div>送料</div>
+                        <div>500円</div>
+                    </div>
+                    <div class="item total">
+                        <div>合計</div>
+                        <div class="value"><h1>2,000</h1><div>円</div></div>
+                    </div>                    
+                </div>
+                <div class="warning">
+                    <p>手数料は含まれておりません。</p>
+                    <p>ご購入手続きが完了するまで、カートの商品は確保されません。</p>
+                    <p>詳細は<a href="../../06tokushoho/index.html">特定商取引法</a>に基づく表記をご参照ください。</p>
+                </div>
+                <div class="checkout">
+                    <a href="checkout/index.html">
+                        お会計に進む
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- フッター -->
+    <footer>
+        <div class="footer-area">
+            <a href="../../index.html"><img  src="../../img/top-footer-logo.png" alt="KAKISEN.のロゴ" width="175" height="75"></a>
+            <nav class="nav-footer">
+                <ul>
+                    <a href="../../01about/index.html"><li>ABOUT</li></a>
+                    <a href="../../02product/index.html"><li>PRODUCT</li></a>
+                    <a href="../../03online/index.html"><li>ONLINE SHOP</li></a>
+                    <a href="../../04access/index.html"><li>ACCESS</li></a>
+                </ul>     
+            </nav>
+            <div class="footer-sub">
+                <a href="../../05privacy/index.html"><p>プライバシー・ポリシー</p></a>
+                <a href="../../06tokushoho/index.html"><p>特定商取引法に基づく表示</p></a>
+            </div>
+            <div class="copyright">
+                <p>©2025 SETO CRAFTS Co.</p>
+            </div>
+        </div>
+        <div class="footer-pattern">
+            <div class="pattern-track">
+                <img src="../../img/top-footer-kikagaku.png" alt="幾何学模様" width="3456" height="120">
+                <img src="../../img/top-footer-kikagaku.png" alt="幾何学模様" width="3456" height="120">
+            </div>
+        </div>
+    </footer>
+    <script src="../../js/no-top-header-menu.js"></script>
+    <script src="../../js/nomberCounter.js"></script>
+    <script src="../../js/online-img-list.js"></script>
+</body>
+
+</html>

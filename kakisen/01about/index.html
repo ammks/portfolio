@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>タイトル</title>
+<link href="../css/reset.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<!-- フォント -->
+<!-- Shippori Mincho -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@700&display=swap" rel="stylesheet">
+<!-- Noto Sans JP -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+<!-- Gravitas On -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
+<!-- Inknut Antiqua -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- ビューポート -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--jQuery本体-->
+<script src="js/jquery-1.11.2.min.js"></script>
+
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+<!-- スライダー -->
+ <script src="../js/jquery.bxslider.js"></script>
+ <link href="../js/jquery.bxslider.css" rel="stylesheet">
+<!-- レディ関数 -->
+ <script>
+    $(document).ready(function(){
+      $('.slider-2').bxSlider();
+    });
+</script>
+
+</head>
+
+<body class="wrapper">
+    
+    <!-- ヘッダー -->
+	<header>
+        <div class="header-logo">
+            <a href="../index.html"><img src="../img/top-header-logo.png" alt="kakisen.ロゴ" width="119" height="51"></a>
+        </div>
+        <div class="header-menu">
+            <div class="menu-btn" id="menu-btn">
+                <span class="menu-text">MENU</span>
+                <div class="menu-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                </div>
+            </div>
+        </div>
+        <!-- グローバルナビ -->
+        <div id="global-nav" class="nav-overlay">
+            <div class="close-btn" id="menu-close">
+                <span class="close-line line1"></span>
+                <span class="close-line line2"></span>
+            </div>
+            <nav class="nav-content">
+                <ul>
+                    <a href="../index.html"><li data-pattern="top-top-bg">TOP</li></a>
+                    <a href="../01about/index.html"><li data-pattern="top-about-bg">ABOUT</li></a>
+                    <a href="../02product/index.html"><li data-pattern="top-product-bg">PRODUCT</li></a>
+                    <a href="../03online/index.html"><li data-pattern="top-online-bg">ONLINE SHOP</li></a>
+                    <a href="../04access/index.html"><li data-pattern="top-access-bg">ACCESS</li></a>
+                </ul>  
+                <div id="pattern-bg">
+                </div>      
+            </nav>
+        </div>
+        <!-- ONLINE SHOPボタン -->
+        <a href="../03online/index.html" class="fixed-shop-btn">
+            <h4>ONLINE<br>SHOP</h4>
+        </a>
+    </header>
+    <!-- メイン -->
+    <main id="about">
+        <div class="header-tile"><img src="../img/about-mtp.png" alt=""></div>
+        <div class="title">
+            <img src="../img/title-icon.png" alt="正方形の柄" width="34" height="34">
+            <h3>ABOUT</h3>
+        </div>
+        <!-- セクション諸々 -->
+        <div class="Sliders">
+            <ul class="slider-2">
+                <li><img src="../img/about-main1.png" alt="#"></li>
+                <li><img src="../img/about-main3.png" alt="#"></li>
+                <li><img src="../img/about-main2.png" alt="#"></li>
+            </ul> 
+        </div>
+
+        <div class="BGanime">
+            <h2>KAKISEN.の美味しさの秘密</h2>
+            <h5>1.旨みが凝縮された濃厚な牡蠣</h5>
+            <br>安芸津の牡蠣が持つ最大の特長は、「濃厚な味わい」です。
+            <br>これは、安芸灘に面したこの海域に大きな河川が流れ込んでいないため、
+            <br>他の産地と比べて塩分濃度が高いという地理的条件がもたらす恵みです。
+            <br><br>高い塩分濃度の海水でじっくりと育つことで、
+            <br>牡蠣の身は旨み成分やミネラルを豊富に蓄え、
+            <br>口に入れた瞬間に広がる磯の香りと凝縮された甘みが際立ちます。
+
+            <h5>2. 綺麗で美しい海で獲れる上質な味わい</h5>
+            <br>安芸津が面する海域は、広島県が定める「清浄海域」の基準をクリアした特に美しい海です。
+            <br>牡蠣は海水を大量に吸い込んで育つため、水質の良さが何よりも重要です。
+            <br><br>清浄な海で育った安芸津の牡蠣は、安心・安全に、雑味のないクリアな味わいを
+            <br>堪能していただけます。
+        </div>
+
+
+        <div class="BGI">  
+            <img src="../img/about-mtp.png" alt=""> 
+            <!-- ↑　青いマステ柄 -->
+
+                <!-- 固定背景 -->
+            <div class="switch-img">
+                <div class="item-first"><img src="../img/about-lemon.png" alt="レモンの実が揺れている"></div>
+                <div class="item-second"><img src="../img/about-oyster.png" alt="牡蠣がたくさん"></div>
+            </div>
+
+            <img src="../img/about-mtp.png" alt=""> 
+            <!-- ↑　青いマステ柄 -->
+        </div>
+   
+
+        <div class="about-slider">
+            <div class="slide-track">
+                <img src="../img/about-flow1.png" alt="牡蠣の写真" width="800px">
+                <img src="../img/about-flow2.png" alt="せんべいの写真" width="800px">
+                <img src="../img/about-flow3.png" alt="広島の海の写真" width="800px">
+                <img src="../img/about-flow1.png" alt="牡蠣の写真" width="800px">
+                <img src="../img/about-flow2.png" alt="せんべいの写真" width="800px">
+                <img src="../img/about-flow3.png" alt="広島の海の写真" width="800px">                
+                <img src="../img/about-flow1.png" alt="牡蠣の写真" width="800px">
+                <img src="../img/about-flow2.png" alt="せんべいの写真" width="800px">
+                <img src="../img/about-flow3.png" alt="広島の海の写真" width="800px"> 
+                <img src="../img/about-flow1.png" alt="牡蠣の写真" width="800px">
+                <img src="../img/about-flow2.png" alt="せんべいの写真" width="800px">
+                <img src="../img/about-flow3.png" alt="広島の海の写真" width="800px">
+                <img src="../img/about-flow1.png" alt="牡蠣の写真" width="800px">
+                <img src="../img/about-flow2.png" alt="せんべいの写真" width="800px">
+                <img src="../img/about-flow3.png" alt="広島の海の写真" width="800px">  
+            </div>
+        </div>
+        <section class="section-1">
+            <div class="flow-img down">
+                <img src="../img/about-vertical1.png" alt="">
+                <img src="../img/about-vertical1.png" alt="">
+                <img src="../img/about-vertical1.png" alt="">
+                <img src="../img/about-vertical1.png" alt="">
+                <img src="../img/about-vertical1.png" alt="">
+                <img src="../img/about-vertical1.png" alt="">
+                <img src="../img/about-vertical1.png" alt="">
+                <img src="../img/about-vertical1.png" alt="">
+            </div>
+            <div class="content-area">
+                <div class="middle">
+                    <div class="title">
+                        <img src="../img/title-icon.png" alt="正方形の柄" width="34" height="34">
+                        <h3>OUR STORY</h3>
+                    </div>
+                    <div class="title">
+                        <h2><img src="../img/access-subtitle-icon.png" alt="" width="8" height="8">広島牡蠣をモダンに届ける</h2>
+                    </div>        
+                    <p>弊社は令和5年（2023年）に、広島の恵みを
+                        <br>新しい形でお伝えしていくことを使命として、
+                        <br>広島県は呉にて創業いたしました。
+                        <br><br>モダンでポップに、
+                        <br>広島を新たに代表するお菓子として、
+                        <br>お酒のおつまみとしてはもちろん老若男女問わず
+                        <br>多くの方々に選ばれています。
+                    </p>
+                    <div class="button">
+                        <a  class="kakisen-a" href="../04access/index.html">
+                            <div class="kakisen-btn">
+                                <p>アクセスへ</p>
+                                <div class="kakisen-circle"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="rotate-flower1 sp-none"><img src="../img/about-oysterflower1.png" alt=""></div>
+            <div class="rotate-flower2 sp-none"><img src="../img/about-oysterflower2.png" alt=""></div>
+            <div class="flow-img up">
+                <img src="../img/about-vertical1.png" alt="">
+                <img src="../img/about-vertical1.png" alt="">
+                <img src="../img/about-vertical1.png" alt="">
+                <img src="../img/about-vertical1.png" alt="">
+                <img src="../img/about-vertical1.png" alt="">
+                <img src="../img/about-vertical1.png" alt="">
+                <img src="../img/about-vertical1.png" alt="">
+                <img src="../img/about-vertical1.png" alt="">
+                <img src="../img/about-vertical1.png" alt="">
+            </div>
+        </section>
+
+
+        <section class="section-2">
+            <div class="flow-img down">
+                <img src="../img/about-vertical2.png" alt="">
+                <img src="../img/about-vertical2.png" alt="">
+                <img src="../img/about-vertical2.png" alt="">
+                <img src="../img/about-vertical2.png" alt="">
+                <img src="../img/about-vertical2.png" alt="">
+            </div>
+            <div class="content-area">
+                <div class="vertical-moji">
+                    <div class="middle">
+                        <div class="title">
+                            <img src="../img/title-icon.png" alt="正方形の柄" width="34" height="34">
+                            <h3>Passion for <br class="sp-br">the KAKISEN.</h3>
+                        </div>
+                    
+                        <div class="title">
+                            <h2><img src="../img/access-subtitle-icon.png" alt="" width="8" height="8">広島牡蠣の旨みを凝縮した「牡蠣せんべい」</h2>
+                        </div>        
+                        <p>私たちは、地元広島産牡蠣の品質に徹底的にこだわり、
+                            <br>その牡蠣を主役にした牡蠣せんべいの製造・販売をしています。
+                            <br><br>牡蠣や瀬戸内産の素材が持つ本来の美味しさを
+                            <br>最大限に引き出す商品づくりに努めております。
+                            <br><br>これからも継続的に、より良い商品をお届けすることで、
+                            <br>お客様に心から喜んでいただける瀬戸内の味をお届けしてまいります
+                        </p>
+                        <div class="button">
+                            <a  class="kakisen-a" href="../02product/index.html">
+                                <div class="kakisen-btn">
+                                    <p>商品情報へ</p>
+                                    <div class="kakisen-circle"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+            <div class="rotate-flower3 sp-none"><img src="../img/about-oysterflower3.png" alt=""></div>
+            <div class="rotate-flower4 sp-none"><img src="../img/about-oysterflower4.png" alt=""></div>
+            <div class="flow-img up">
+                <img src="../img/about-vertical2.png" alt="">
+                <img src="../img/about-vertical2.png" alt="">
+                <img src="../img/about-vertical2.png" alt="">
+                <img src="../img/about-vertical2.png" alt="">
+                <img src="../img/about-vertical2.png" alt="">
+            </div>
+        </section>
+  
+    </main>
+    <footer class="about">
+        <div class="footer-area">
+            <a href="../index.html"><img  src="../img/top-footer-logo.png" alt="KAKISEN.のロゴ" width="175" height="75"></a>
+            <nav class="nav-footer">
+                <ul>
+                    <a href="../01about/index.html"><li>ABOUT</li></a>
+                    <a href="../02product/index.html"><li>PRODUCT</li></a>
+                    <a href="../03online/index.html"><li>ONLINE SHOP</li></a>
+                    <a href="../04access/index.html"><li>ACCESS</li></a>
+                </ul>     
+            </nav>
+            <div class="footer-sub">
+                <a href="../05privacy/index.html"><p>プライバシー・ポリシー</p></a>
+                <a href="../06tokushoho/index.html"><p>特定商取引法に基づく表示</p></a>
+            </div>
+            <div class="copyright">
+                <p>©2025 SETO CRAFTS Co.</p>
+            </div>
+        </div> 
+        <div class="footer-pattern">
+            <div class="pattern-track">
+                <img src="../img/top-footer-kikagaku.png" alt="幾何学模様" width="3456" height="120">
+                <img src="../img/top-footer-kikagaku.png" alt="幾何学模様" width="3456" height="120">
+            </div>
+        </div>
+    </footer>
+    <script src="../js/no-top-header-menu.js"></script>
+</body>
+</html>

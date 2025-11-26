@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>KAKISEN. | CHECKOUT</title>
+<link href="../../../css/reset.css" rel="stylesheet">
+<link href="../../../css/style.css" rel="stylesheet">
+<!-- フォント -->
+<!-- Shippori Mincho -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@700&display=swap" rel="stylesheet">
+<!-- Noto Sans JP -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+<!-- Gravitas On -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
+<!-- Inknut Antiqua -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- ビューポート -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--jQuery本体-->
+
+</head>
+
+<body class="wrapper"  id="checkOut">
+    <!-- ヘッダー -->
+    <header>
+        <div class="header-logo">
+            <a href="../../../index.html"><img src="../../../img/top-header-logo.png" alt="kakisen.ロゴ" width="119" height="51"></a>
+        </div>
+        <div class="header-menu">
+            <div class="menu-btn" id="menu-btn">
+                <span class="menu-text">MENU</span>
+                <div class="menu-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                </div>
+            </div>
+        </div>
+        <!-- グローバルナビ -->
+        <div id="global-nav" class="nav-overlay">
+            <div class="close-btn" id="menu-close">
+                <span class="close-line line1"></span>
+                <span class="close-line line2"></span>
+            </div>
+            <nav class="nav-content">
+                <ul>
+                    <a href="../../../01about/index.html"><li data-pattern="top-about-bg">ABOUT</li></a>
+                    <a href="../../../02product/index.html"><li data-pattern="top-product-bg">PRODUCT</li></a>
+                    <a href="../../../03online/index.html"><li data-pattern="top-online-bg">ONLINE SHOP</li></a>
+                    <a href="../../../04access/index.html"><li data-pattern="top-access-bg">ACCESS</li></a>
+                </ul>  
+                <div id="pattern-bg">
+                </div>      
+            </nav>
+        </div>
+    </header>
+    <div class="header-tile"><img src="../../../img/product-tile-1-ver.2.png" alt=""></div>
+    <!-- メイン -->
+    <main>
+        <!-- セクション諸々 -->
+        <div class="title">
+            <img src="../../../img/title-icon.png" alt="正方形の柄" width="34" height="34">
+            <h3>CHECKOUT</h3>
+        </div>
+        <section class="wrapper checkOut">
+            <div class="container curent">
+                <div class="circle no-1"></div>
+                <div class="circle no-2"></div>
+                <div class="circle no-3"></div>
+                <div class="circle no-4"></div>
+            </div>
+            <div class="error-msg">必須の項目が入力されていません。</div>
+            <form action="" method="post">
+                <label for="user-name" class="required">お名前</label>
+                <input type="text" name="user-name" id="user-name" placeholder="牡蠣　煎太郎" required>
+
+                <label for="user-name-furigana" class="required">フリガナ</label>
+                <input type="text" name="user-name-furigana" id="user-name-furigana" placeholder="カキ　センタロウ" required>
+
+                <label for="post-code" class="required">郵便番号</label>
+                <input type="text" name="post-code" id="post-code" placeholder="0000000" required>
+
+                <label for="prefectures" class="required">都道府県</label>
+                <input type="text" name="prefectures" id="prefectures" placeholder="都道府県" required>
+
+                <label for="municipalities" class="required">市区町村</label>
+                <input type="text" name="municipalities" id="municipalities" placeholder="呉市汐浜町" required>
+
+                <label for="street-address" class="required">番地</label>
+                <input type="text" name="street-address" id="street-address" placeholder="２－１４－３" required>
+
+                <label for="building-name" class="required">建物名・部屋番号</label>
+                <input type="text" name="building-name" id="building-name" placeholder="〇〇ビル１０１" required>
+
+                <label for="telephone-number">電話番号</label>
+                <input type="text" name="telephone-number" id="telephone-number" placeholder="08012345678">
+
+                <label for="mail" class="required">メールアドレス</label>
+                <input type="text" name="mail" id="mail" placeholder="example@mail.com" required>
+
+                <button type="submit">お支払方法選択へ</button>
+            </form>
+        </section>
+    </main>
+    <!-- フッター -->
+    <footer>
+        <div class="footer-area">
+            <a href="../../../index.html"><img  src="../../../img/top-footer-logo.png" alt="KAKISEN.のロゴ" width="175" height="75"></a>
+            <nav class="nav-footer">
+                <ul>
+                    <a href="../../../01about/index.html"><li>ABOUT</li></a>
+                    <a href="../../../02product/index.html"><li>PRODUCT</li></a>
+                    <a href="../../../03online/index.html"><li>ONLINE SHOP</li></a>
+                    <a href="../../../04access/index.html"><li>ACCESS</li></a>
+                </ul>     
+            </nav>
+            <div class="footer-sub">
+                <a href="../../../05privacy/index.html"><p>プライバシー・ポリシー</p></a>
+                <a href="../../../06tokushoho/index.html"><p>特定商取引法に基づく表示</p></a>
+            </div>
+            <div class="copyright">
+                <p>©2025 SETO CRAFTS Co.</p>
+            </div>
+        </div>
+        <div class="footer-pattern">
+            <div class="pattern-track">
+                <img src="../../../img/top-footer-kikagaku.png" alt="幾何学模様" width="3456" height="120">
+                <img src="../../../img/top-footer-kikagaku.png" alt="幾何学模様" width="3456" height="120">
+            </div>
+        </div>
+    </footer>
+    <script src="../../../js/no-top-header-menu.js"></script>
+    <script src="../../../js/online-img-list.js"></script>
+    <script src="../../../js/checkout-form.js"></script>
+</body>
+
+</html>
