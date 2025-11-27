@@ -5,39 +5,39 @@ img{max-width: 100%;height:auto;}
 /* ------------------共通------------------
 ---------------------------------------- */
 h1{
-    color:#494544;
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    font-style: bold;
-    font-size: 36px;
+  color:#494544;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 36px;
 }
 h2{
-    color:#494544;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    font-style: bold;
-    font-size: 24px;
+  color:#494544;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: bold;
+  font-size: 24px;
 }
 h3{
-    color:#494544;
-    font-family: "Zen Kaku Gothic New", sans-serif;
-    font-weight: 600;
-    font-style: bold;
-    font-size: 24px;
+  color:#494544;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 24px;
 }
 h4{
-    color:#494544;
-    font-family: "Zen Kaku Gothic New", sans-serif;
-    font-weight: 500;
-    font-style: bold;
-    font-size: 18px;
+  color:#494544;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 600;
+  font-style: bold;
+  font-size: 18px;
 }
 p{
-    color:#494544;
-    font-family: "Zen Kaku Gothic New", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
+  color:#494544;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
 }
 /* スクロール */
 html {
@@ -49,9 +49,9 @@ a:visited {text-decoration: none;color:#494544;}
 a:hover{text-decoration: none;color: #c41a30;}
 a:active {text-decoration: none;color: #c41a30;}
 .wrapper {
-    max-width: 1920px;
-    margin: 0 auto;
-    background-color: #fff;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #fff;
 }
 /* ボタン */
 .btn-area {
@@ -83,50 +83,81 @@ a.btn:hover {
 .title h1{
   text-align: center;
 }
+.sub-title{
+  width: 100%;
+  padding: 6.25% 0 5.21% 0;  
+}
+.sub-title h3{
+  text-align: center;
+  position: relative;
+  padding: 4px 8px;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  display: block;
+  box-sizing: border-box;
+  max-width: 480px;
+  text-align: center; 
+  margin: 24px;
+  margin-inline: auto;
+}
+.sub-title h3::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(135deg, transparent 25%, #C41A30 25%, #FBF6F7 50%, transparent 50%, transparent 75%, #FBF6F7 75%, #FBF6F7);
+  background-size: 4px 4px;
+  z-index: 0;
+}
+/* ------------------top------------------
+---------------------------------------- */
 /* ヘッダー */
 header{
   width: 100%;
   position: fixed;
 }
 .logo h2{
-    font-size: 16px;
+  font-size: 16px;
 }
 .header-inner{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    gap: 5%;
-    padding: 0 3%;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap: 5%;
+  padding: 0 3%;
 }
 nav{
     width: 100%;
 }
 nav ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 5%;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5%;
 }
 nav ul li{
-    color: #494544;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    font-weight: bold;
-    font-size: 16px;
+  color: #494544;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-weight: bold;
+  font-size: 16px;
 }
-/* ------------------top------------------
----------------------------------------- */
 /* fv */
 .fv{
   width: 100%;
+  max-width: 1400px;
   height: 100vh;
-  padding: 5%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 6.25%;
 }
 .fv-text{
   display: flex;
@@ -158,18 +189,18 @@ nav ul li{
 .fv-text-main span:nth-child(9) { animation-delay: 0.8s; }
 @keyframes fadeColorUp {
   0% {
-    opacity: 0;
-    transform: translateY(10px);
-    color: #C41A30;
+  opacity: 0;
+  transform: translateY(10px);
+  color: #C41A30;
   }
   40% {
-    opacity: 1;
-    transform: translateY(0);
-    color: #C41A30;
+  opacity: 1;
+  transform: translateY(0);
+  color: #C41A30;
   }
   100% {
-    opacity: 1;
-    color: #494544;
+  opacity: 1;
+  color: #494544;
   }
 }
 /* 回転動き */
@@ -212,15 +243,20 @@ nav ul li{
 }
 @keyframes flip360 {
   0% {
-    transform: rotateY(0deg);
+  transform: rotateY(0deg);
   }
   100% {
-    transform: rotateY(360deg);
+  transform: rotateY(360deg);
   }
 }
 /* top-about */
 .about{
   width: 100%;
+  padding: 6.25% 0;
+  background-image: repeating-linear-gradient(transparent, transparent 17px, #FBF6F7 17px, #FBF6F7 26px, transparent 26px, transparent 34px, #FBF6F7 26px, #FBF6F7 68px, transparent 68px, transparent 77px, #FBF6F7 77px, #FBF6F7 86px, transparent 86px, transparent 137px), repeating-linear-gradient(90deg, transparent, transparent 17px, #FBF6F7 17px, #FBF6F7 26px, transparent 26px, transparent 34px, #FBF6F7 26px, #FBF6F7 68px, transparent 68px, transparent 77px, #FBF6F7 77px, #FBF6F7 86px, transparent 86px, transparent 137px);
+  background-size: 137px 137px;
+  background-color: #fff;
+  background-blend-mode: multiply;
 }
 .about .text{
   display: flex;
@@ -232,12 +268,9 @@ nav ul li{
 .about .text h4{
   margin-bottom: 2%;
 }
-.btn-area{
-  margin-bottom: 6.25%;
-}
 /* top-works */
 .top-works{
-  background-color: #FBF6F7; 
+  background-color: #fff; 
 }
 .top-works p{
   margin-top: 2%;
@@ -265,114 +298,125 @@ nav ul li{
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  margin: 5px 0;
+  margin: 8px 0;
 }
 .tag {
   display: inline-flex;            
   justify-content: center;
   align-items: center;
-  width: 110px;               
-  height: 30px;                     
-  background-color: #C41A30;      
-  color: #fff;                   
+  padding: 5px 15px;                   
+  background-color: #fff;      
+  color: #C41A30; 
+  border: 1px solid #C41A30;                  
   letter-spacing: 0.05em;
   font-size: 12px;
   text-align: center;
 }
+/* TOPに戻る */
+.to-top {
+  margin: 5.21% 5.21% 3% 0;
+}
+.to-top a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+.to-top p{
+  font-size: 12px;
+  text-align: center;
+}
+.to-top-logo {
+  width: 100px;             
+  height: auto;
+  margin-bottom: 5px; 
+  transition: transform 0.6s ease;
+}
+.to-top a:hover .to-top-logo {
+  transform: translateY(-8px) rotate(-10deg); 
+}
 /* フッター */
 footer{
   background-color: #C41A30;
-  padding: 1%;
+  padding: 5.21% 0 15px 0;
 }
-.footer-inner {
+.footer-inner{
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.footer-left img {
-  width: 100%;
-}
-.footer-center nav ul {
-  display: flex;
-  gap: 10%;
-  list-style: none;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
-.footer-center nav a {
+.footer-inner nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+.footer-inner nav a{
   color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 14px;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
-.footer-center nav a:hover {
-  opacity: 0.7;
-}
-.footer-center p {
-  font-size: 12px;
-  color: #fff;
-  text-align: center;
-}
-.footer-message {
-  color: #fff;
+.footer-inner nav a:hover {
+  color: #494544;
 }
 .copy{
+  font-size: 12px;
   text-align: center;
   color: #fff;
 }
-
-/* profileページ */
-/* about */
-.about{
-  background-color: #fff;
-}
-.about h1{
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  text-align: center;
-  margin-bottom: 7%;
-}
+/* ------------------About------------------
+---------------------------------------- */
 /* 自己紹介 */
 .self-introduction{
-  background-color: #FBF6F7;
-  padding-top: 7%;
-}
-.self-introduction h2{
-  text-align: center;
+  background-color: #fff;
+  margin: 0 auto;
+  width: 1400px;
 }
 .self-con{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5%;
-  padding: 5% 5% 7% 5%;
 }
 .self-con img{
-  width: 30%;
+  width: 20%;
 }
 .self-con-txt{
-  width: 40%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
 }
-.self-con-txt h3{
-  font-family: "Inter", sans-serif;
-  margin-bottom: 10%;
-  font-size: 32px;
+.self-con-txt h2{
+  font-size: 24px;
+  margin-bottom: 5%;
 }
 .self-con-txt p{
   line-height:170%;
 }
-.hobby{
-  margin-top: 2%;
-}
 /* できること */
+.skills-con {
+  background-color: #FBF6F7;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  flex-wrap: wrap;
+}
 .skills{
   padding: 7% 0;
 }
 .skills h2{
   text-align: center;
   margin-bottom: 5%;
-}
-.skills-con {
-  display: flex;
-  justify-content: center;
-  gap: 10%;
-  flex-wrap: wrap; /* スマホで縦になるように */
 }
 .skill-item {
   width: 20%;
@@ -403,7 +447,7 @@ footer{
 /* できること */
 .strengths{
   padding: 7% 0;
-  background-color: #FBF6F7;
+  background-color: #fff;
 }
 .strengths h2{
   text-align: center;
@@ -431,7 +475,7 @@ footer{
   font-weight: bold;
   color: #C41A30;
   letter-spacing: 0.05em;
-  flex-shrink: 0; /* 番号が縮まないように固定 */
+  flex-shrink: 0;
 }
 .strengths-con-box img {
   width: 10%;
@@ -442,18 +486,36 @@ footer{
   line-height: 170%;
   max-width: 400px;
 }
+/* ------------------Contact------------------
+---------------------------------------- */
 
-/* ===== スマホ対応 ===== */
+
+/* ------------------スマホ対応------------------
+---------------------------------------- */
 @media screen and (max-width: 768px) {
-  .footer-inner {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 3%;
+  /* TOP */
+  header nav ul {
+    gap: 16px;
   }
-  .footer-right {
-    text-align: center;
+  header nav a {
+    font-size: 14px;
+    letter-spacing: 0.03em;
   }
+  .about .text {
+    padding: 20px 15px;
+  }
+  .about h3 {
+    font-size: 18px;
+  }
+  .about h4 {
+    font-size: 14px;
+  }
+  .works-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  /* ABOUT */
   .skills-con {
     flex-direction: column;
     justify-content: center;
@@ -465,4 +527,5 @@ footer{
     text-align: center;
     gap: 20px;
   }
+  /* CONTACT */
 }

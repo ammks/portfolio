@@ -9,42 +9,41 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
 <!-- ビューポート -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--jQuery本体-->
-<script src="js/jquery-1.11.2.min.js"></script>
-
+<script src="../js/jquery-1.11.2.min.js"></script>
 <!--ready関数-->
 <script>
 $(function(){
-
 });
 </script>
 <!-- カーソル -->
 <script>
-  const cursor = document.querySelector(".cursor");
-
-  window.addEventListener("mousemove", (e) => {
-    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-  });
+const cursor = document.querySelector(".cursor");
+window.addEventListener("mousemove", (e) => {
+cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+});
 </script>
 </head>
 
-<body class="wrapper">
+<body class="wrapper" id="top">
     <!-- ヘッダー -->
     <header>
         <!-- グローバルナビ -->
         <div class="header-inner">
             <div class="logo">
                 <a href="../index.html">
-                <img src="../img/header_logo.png" alt="ayanoの顔イラスト" width="842" height="595">
+                <h2>AYANO<h2>
                 </a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="../works/index.html">WORKS</a></li>
-                    <li><a href="../profile/index.html">PROFILE</a></li>
-                    <li><a href="../blog/index.html">BLOG</a></li>
+                    <li><a href="../index.html#works">WORKS</a></li>
+                    <li><a href="../about/index.html">ABOUT</a></li>
                     <li><a href="../contact/index.html">CONTACT</a></li>
                 </ul>
             </nav>
@@ -53,27 +52,34 @@ $(function(){
     <!-- メイン -->
     <main>
         <!-- about -->
+        <div class="title">
+            <h1>About</h1>
+        </div>
         <section class="about">
-            <h1>PROFILE</h1>
-            <h2>お客様の課題を解決し、ユーザーに寄り添うデザインを</h2>
-            <h3>デザイナーとして<br>人の心を動かす仕事に挑戦し続けていきたい</h3>
+            <div class="text">
+                <h3>お客様の課題を解決し、ユーザーに寄り添うデザインを</h3>
+                <h4>デザイナーとして人の心を動かす仕事に挑戦し続けたい</h4>
+            </div>
         </section>
-        <!-- 自己紹介         -->
+        <!-- 自己紹介-->
         <section class="self-introduction">
-            <h2>自己紹介</h2>
+            <div class="sub-title">
+                <h3>自己紹介</h3>
+            </div>
             <div class="self-con">
-                <img src="../img/profile_kao.png" alt="ayanoの白黒の顔写真" width="266" height="345">
+                <img src="../img/about_kao.png" alt="白黒の顔写真" width="266" height="345">
                 <div class="self-con-txt">
-                    <h3>AOKI AYANO</h3>
+                    <h2>AOKI AYANO</h2>
                     <p>1996年茨城県生まれ、東京在住。<br>琉球大学では海洋生物（タコ）の研究に取り組む。<br>前職ではIT企業にて、ダッシュボードやアプリのUI設計・デザインを担当。<br>データをもとに課題を整理し、お客様の目的に沿ったデザイン提案。 <br>現在は、ユーザーにとって使いやすく、お客様の価値向上にもつながるデザインを目指しています。</p>   
                     <p class="hobby">#デグーを愛でる ＃ダイビング #海外ドラマ鑑賞</p>
                 </div>
             </div>
         </section>
         <!-- できること -->
-        <section class="skills">
-            <h2>できること</h2>
-            <div class="skills-con">
+        <section class="skills-con">
+            <div class="sub-title">
+                <h3>できること</h3>
+            </div>
                 <div class="skill-item">
                     <div class="circle">
                         <h3>Design</h3>   
@@ -92,7 +98,9 @@ $(function(){
         </section>
         <!-- 強み -->
         <section class="strengths">
-            <h2>私の強み</h2>
+            <div class="sub-title">
+                <h3>私の強み</h3>
+            </div>
             <div class="strengths-con">
                 <div class="strengths-con-box">
                     <h1 class="number">01</h1>
@@ -111,31 +119,30 @@ $(function(){
                 </div>                                
             </div>
         </section>
-
-        
-    </main>
-    <footer>
-        <div class="footer-inner">
-            <div class="footer-left">
-            <a href="../index.html">
-            <img src="../img/footer_logo.png" alt="顔のロゴイラスト" width="156" height="157">
+        <!-- TOPに戻る -->
+        <div class="to-top">
+            <a href="#top">
+                <img class="to-top-logo" src="../img/footer_logo.png" alt="TOPに戻るロゴ" width="229" height="162">
+                <p>TOPに戻る↑</p>
             </a>
         </div>
-        <div class="footer-center">
+    </main>
+    <!-- フッター -->
+    <footer>
+        <div class="footer-inner">
+            <!-- <div class="messeage">
+                <p>ご覧いただきありがとうございました。</p>
+            </div> -->
             <nav>
                 <ul>
-                    <li><a href="../works/index.html">WORKS</a></li>
-                    <li><a href="../profile/index.html">PROFILE</a></li>
-                    <li><a href="../blog/index.html">BLOG</a></li>
+                    <li><a href="../index.html#works">WORKS</a></li>
+                    <li><a href="../about/index.html">ABOUT</a></li>
                     <li><a href="../contact/index.html">CONTACT</a></li>
                 </ul>
             </nav>
-        </div>
-            <p class="copy">©2025 aokiyayano</p>
+            <p class="copy">©2025aokiyayano</p>
         </div>           
-
     </footer>
-
 </body>
 
 </html>

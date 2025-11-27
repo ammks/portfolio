@@ -23,14 +23,14 @@ $(function(){
 </script>
 <!-- カーソル -->
 <script>
-  const cursor = document.querySelector(".cursor");
-  window.addEventListener("mousemove", (e) => {
-    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-  });
+const cursor = document.querySelector(".cursor");
+window.addEventListener("mousemove", (e) => {
+cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+});
 </script>
 </head>
 
-<body class="wrapper">
+<body class="wrapper" id="top">
     <!-- ヘッダー -->
     <header>
         <!-- グローバルナビ -->
@@ -42,8 +42,8 @@ $(function(){
             </div>
             <nav>
                 <ul>
-                    <li><a href="works/index.html">WORKS</a></li>
-                    <li><a href="profile/index.html">ABOUT</a></li>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="about/index.html">ABOUT</a></li>
                     <li><a href="contact/index.html">CONTACT</a></li>
                 </ul>
             </nav>
@@ -80,7 +80,7 @@ $(function(){
             </div>
         </section>
         <!-- works -->
-        <section class="top-works">
+        <section class="top-works" id="works">
             <div class="title">
                 <h1>Works</h1>
             </div>
@@ -174,29 +174,30 @@ $(function(){
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
-        <div class="footer-inner">
-            <div class="footer-left">
-            <a href="index.html">
-            <img src="img/footer_logo.png" alt="顔のロゴイラスト" width="156" height="157">
+        <!-- TOPに戻る -->
+        <div class="to-top">
+            <a href="#top">
+                <img class="to-top-logo" src="img/footer_logo.png" alt="TOPに戻るロゴ" width="229" height="162">
+                <p>TOPに戻る↑</p>
             </a>
         </div>
-            <div class="footer-center">
-                <nav>
-                    <ul>
-                        <li><a href="works/index.html">WORKS</a></li>
-                        <li><a href="profile/index.html">PROFILE</a></li>
-                        <li><a href="blog/index.html">BLOG</a></li>
-                        <li><a href="contact/index.html">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <p class="copy">©2025 aokiyayano</p>
+    </main>
+    <!-- フッター -->
+    <footer>
+        <div class="footer-inner">
+            <!-- <div class="messeage">
+                <p>ご覧いただきありがとうございました。</p>
+            </div> -->
+            <nav>
+                <ul>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="about/index.html">ABOUT</a></li>
+                    <li><a href="contact/index.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <p class="copy">©2025aokiyayano</p>
         </div>           
-
     </footer>
-
 </body>
 
 </html>
