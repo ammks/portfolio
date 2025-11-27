@@ -271,6 +271,7 @@ nav ul li{
 /* top-works */
 .top-works{
   background-color: #fff; 
+  padding-bottom: 6.25%;
 }
 .top-works p{
   margin-top: 2%;
@@ -311,6 +312,22 @@ nav ul li{
   letter-spacing: 0.05em;
   font-size: 12px;
   text-align: center;
+}
+/* 自己紹介 */
+.top-self-introduction{
+  background-color: #FBF6F7;
+  margin: 0 auto;
+  padding-bottom: 6.25%;
+}
+/* CONTACT */
+.contact-messeage{
+  background-color: #fff;
+  padding-bottom: 5.21%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 /* TOPに戻る */
 .to-top {
@@ -377,7 +394,7 @@ footer{
 .self-introduction{
   background-color: #fff;
   margin: 0 auto;
-  width: 1400px;
+  padding-bottom: 6.25%;
 }
 .self-con{
   display: flex;
@@ -395,6 +412,7 @@ footer{
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
+  
 }
 .self-con-txt h2{
   font-size: 24px;
@@ -408,8 +426,10 @@ footer{
   background-color: #FBF6F7;
   display: flex;
   justify-content: center;
-  gap: 10%;
+  align-items: center;
+  gap: 5%;
   flex-wrap: wrap;
+  padding-bottom: 6.25%;
 }
 .skills{
   padding: 7% 0;
@@ -421,7 +441,7 @@ footer{
 .skill-item {
   width: 20%;
 }
-.circle {
+.skill-circle {
   width: 160px;
   height: 160px;
   border-radius: 50%;
@@ -434,61 +454,147 @@ footer{
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.05em;
-  /* background: radial-gradient(circle, #C41A30 0%, #8B001B 100%); */
 }
-.circle h3{
+.skill-circle h3{
   color: #fff;
   font-weight: bold;
+}
+.skill-menu p{
+  width: 100%;
 }
 .tool{
   padding-top: 5%;
 }
 /* 強み */
-/* できること */
 .strengths{
-  padding: 7% 0;
   background-color: #fff;
 }
-.strengths h2{
-  text-align: center;
-  margin-bottom: 5%;
-}
-.strengths-con {
+.strengths-con{
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  gap: 10%;
+  gap: 40px;
 }
 .strengths-con-box{
-  width: 80%;
+  max-width: 1000px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 3%;
 }
-.number {
-  width: 5%;
-  text-align: start;
-  font-family: 'Inter', sans-serif;
-  font-size: 36px;
-  font-weight: bold;
-  color: #C41A30;
+.number{
+  width: 80px;
+}
+.number h1{
+  color: #c41a30;
   letter-spacing: 0.05em;
-  flex-shrink: 0;
 }
-.strengths-con-box img {
-  width: 10%;
+.strengths-title{
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.strengths-con-box p {
-  width: 28%;
-  color: #494544;
-  line-height: 170%;
-  max-width: 400px;
+.strengths-con-box img{
+  width: 50px;
+  height: auto;
+  margin: 0 auto;
 }
-/* ------------------Contact------------------
----------------------------------------- */
+.strengths-con-box p{
+  text-align: left;
+  width: 350px;
+}
 
+/* ------------------各作品紹介------------------
+---------------------------------------- */
+.works-con{
+  margin: 0 auto;
+  max-width: 1400px;
+  padding-bottom: 6.25%;
+}
+.works-main{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6.25%;
+}
+.works-main-con{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+.works-top-img{
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 15px;
+}
+.works-scroll{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.works-scroll-box {
+  width: 500px;       
+  height: 500px;      
+  overflow-y: scroll; 
+  overflow-x: hidden;
+  border: 2px solid #494544; 
+  scrollbar-width: thin; 
+  scrollbar-color: #C41A30 #fff;
+  flex-shrink: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.works-scroll-box img {
+  width: 100%;
+  display: block;
+}
+.works-detail{
+  background-color: #FBF6F7;
+  margin: 0 auto;
+  padding: 0 5%;
+  color: #494544;
+  font-size: 15px;
+  line-height: 1.8;
+  padding-bottom: 6.25%;
+}
+.works-table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-top: 1px solid #494544;
+  background-color: #fff;
+}
+.works-table th,
+.works-table td {
+  border-bottom: 1px solid #494544;
+  padding: 25px 20px;
+  vertical-align: top;
+}
+.works-table th {
+  width: 30%;
+  background-color: #fff;
+  color: #C41A30;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  border-right: none;
+}
+.works-table td {
+  width: 70%;
+  text-align: left;
+}
 
 /* ------------------スマホ対応------------------
 ---------------------------------------- */

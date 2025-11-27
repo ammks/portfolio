@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>タイトル</title>
+<link href="../../css/reset.css" rel="stylesheet">
+<link href="../../css/style.css" rel="stylesheet">
+<!-- フォント -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+<!-- ビューポート -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--jQuery本体-->
+<script src="../js/jquery-1.11.2.min.js"></script>
+<!--ready関数-->
+<script>
+$(function(){
+});
+</script>
+<!-- カーソル -->
+<script>
+const cursor = document.querySelector(".cursor");
+window.addEventListener("mousemove", (e) => {
+cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+});
+</script>
+</head>
+
+<body class="wrapper" id="top">
+    <!-- ヘッダー -->
+    <header>
+        <!-- グローバルナビ -->
+        <div class="header-inner">
+            <div class="logo">
+                <a href="../../index.html">
+                <h2>AYANO<h2>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html#works">Works</a></li>
+                    <li><a href="../../about/index.html">About</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdgSs6zwG720KqDxa-3g5mPY9G5YZVA9Rm7Rnpzx0e47HyqnA/viewform" target="_blank" rel="noopener noreferrer">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- メイン -->
+    <main>
+        <section class="works-con">
+            <div class="title">
+                <h1>Works</h1>
+            </div>           
+            <div class="works-main">
+                <div class="works-main-con">
+                    <div class="tag-area">
+                        <p class="tag">チーム制作</p>
+                        <p class="tag">企画</p>
+                        <p class="tag">デザイン</p>
+                        <p class="tag">コーディング</p>
+                    </div>
+                    <h3>せんべいブランドサイト</h3>
+                    <img class="works-top-img" src="../../img/works_kakisen.png" alt="指輪サイトのTOP画面" width="539" height="410">
+                    <div class="btn-area">
+                        <a href="../../kakisen/index.html" class="btn" target="_blank" rel="noopener noreferrer">サイトを見る</a>
+                    </div> 
+                </div>
+                <div class="works-scroll">
+                    <p>TOPページ</p>
+                    <p>※スクロールしてください</p>
+                    <div class="works-scroll-box">
+                        <img src="../../img/works_kaksen_top.png"  alt="せんべいサイトのTOPページ" width="539" height="410">
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <section class="works-detail">
+            <div class="sub-title">
+                <h3>作品概要</h3>
+            </div>  
+            <table class="works-table">
+                <tr>
+                <th>ペルソナ</th>
+                <td>
+                    ・38歳の中学生と小学生の子供がいるパート主婦。<br>
+                    ・夫を立てるタイプで、手持ちリサーチは欠かさない。<br>
+                    ・可愛いより珍しくてオシャレなものが好き。
+                </td>
+                </tr>
+                <tr>
+                <th>課題</th>
+                <td>
+                    <strong>【潜在層】</strong><br>
+                    ・ブランド認知が低く、若年層への訴求力が弱い。<br><br>
+                    <strong>【顕在層】</strong><br>
+                    ・リピート購入に繋がりにくい。
+                </td>
+                </tr>
+                <tr>
+                <th>目的</th>
+                <td>
+                    <strong>【情緒的ベネフィット】</strong><br>
+                    ・ワクワクしてテンションが上がり、購買意欲が高まる。<br><br>
+                    <strong>【機能的ベネフィット】</strong><br>
+                    ・簡単にonlineで購入できる、分かりやすいサイト導線。
+                </td>
+                </tr>
+                <tr>
+                <th>コンセプト</th>
+                <td>
+                    ・Online shopボタン（CV）を固定し、購入しやすい導線を設計。<br>
+                    ・幾何学模様を散りばめることで、和モダンな印象付け。<br><br>
+                    <strong>【色設計】地域性と高級感を両立</strong><br>
+                    ・ベースカラーとして、牡蠣をイメージしたベージュ。<br>
+                    ・メインカラーとして、広島のもみじと宮島の鳥居の朱色。<br>
+                    ・アクセントカラーとして、広島のレモンの黄色。
+                </td>
+                </tr>
+            </table>
+        </section>
+        <!-- TOPに戻る -->
+        <div class="to-top">
+            <a href="#top">
+                <img class="to-top-logo" src="../../img/footer_logo.png" alt="TOPに戻るロゴ" width="229" height="162">
+                <p>TOPに戻る↑</p>
+            </a>
+        </div>
+    </main>
+    <!-- フッター -->
+    <footer>
+        <div class="footer-inner">
+            <nav>
+                <ul>
+                    <li><a href="../../index.html#works">Works</a></li>
+                    <li><a href="../../about/index.html">About</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdgSs6zwG720KqDxa-3g5mPY9G5YZVA9Rm7Rnpzx0e47HyqnA/viewform" target="_blank" rel="noopener noreferrer">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="copy">©2025aokiyayano</p>
+        </div>           
+    </footer>
+</body>
+
+</html>
