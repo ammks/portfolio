@@ -9,74 +9,138 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
 <!-- ビューポート -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--jQuery本体-->
-<script src="js/jquery-1.11.2.min.js"></script>
-
+<script src="../js/jquery-1.11.2.min.js"></script>
 <!--ready関数-->
 <script>
 $(function(){
-
 });
 </script>
 <!-- カーソル -->
 <script>
-  const cursor = document.querySelector(".cursor");
-
-  window.addEventListener("mousemove", (e) => {
-    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-  });
+const cursor = document.querySelector(".cursor");
+window.addEventListener("mousemove", (e) => {
+cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+});
 </script>
 </head>
 
-<body class="wrapper">
+<body class="wrapper" id="top">
     <!-- ヘッダー -->
     <header>
         <!-- グローバルナビ -->
         <div class="header-inner">
             <div class="logo">
                 <a href="../../index.html">
-                <img src="../../img/header_logo.png" alt="ayanoの顔イラスト" width="842" height="595">
+                <h2>AYANO<h2>
                 </a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="../../works/index.html">WORKS</a></li>
-                    <li><a href="../../profile/index.html">PROFILE</a></li>
-                    <li><a href="../../blog/index.html">BLOG</a></li>
-                    <li><a href="../../contact/index.html">CONTACT</a></li>
+                    <li><a href="../../index.html#works">Works</a></li>
+                    <li><a href="../../about/index.html">About</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdgSs6zwG720KqDxa-3g5mPY9G5YZVA9Rm7Rnpzx0e47HyqnA/viewform" target="_blank" rel="noopener noreferrer">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <!-- メイン -->
     <main>
-
-        
-    </main>
-    <footer>
-        <div class="footer-inner">
-            <div class="footer-left">
-            <a href="../../index.html">
-            <img src="../../img/footer_logo.png" alt="顔のロゴイラスト" width="156" height="157">
+        <section class="works-con">
+            <div class="title">
+                <h1>Works</h1>
+            </div>           
+            <div class="works-main">
+                <div class="works-main-con">
+                    <div class="tag-area">
+                        <p class="tag">個人制作</p>
+                        <p class="tag">企画</p>
+                        <p class="tag">デザイン</p>
+                        <p class="tag">コーディング</p>
+                    </div>
+                    <h4>リゾートホテルのようなリラックス感のある</h4>
+                    <h3 class="works-main-title">ハワイアンジュエリーサイト</h3>
+                    <img class="works-top-img" src="../../img/works_ring.png" alt="せんべいサイトのTOP画面" width="539" height="410">
+                    <div class="sub-tag-area">
+                        <p>総時間64h（企画16h・制作48h）</p>
+                        <p>ページ数：9ページ</p>
+                    </div>
+                    <div class="btn-area">
+                        <a href="../../ring/index.html" class="btn" target="_blank" rel="noopener noreferrer">サイトを見る</a>
+                    </div> 
+                </div>
+                <div class="works-scroll">
+                    <p>TOPページ</p>
+                    <p>※スクロールしてください</p>
+                    <div class="works-scroll-box">
+                        <img src="../../img/works_ring_top.png"  alt="せんべいサイトのTOPページ" width="539" height="410">
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <section class="works-detail">
+            <div class="sub-title">
+                <h3>作品概要</h3>
+            </div>  
+            <table class="works-table">
+                <tr>
+                    <th>ペルソナ</th>
+                    <td>
+                    ・31〜35歳の女性。フラダンス歴5年。<br>
+                    ・2年に1回のハワイ旅行を目標に資金を貯めている。<br>
+                    ・鎌倉在住。海まで徒歩10分のマンションで彼氏と同棲中。
+                    </td>
+                </tr>
+                <tr>
+                    <th>課題</th>
+                    <td>
+                    ・店舗への集客の仕組みが弱い。
+                    </td>
+                </tr>
+                <tr>
+                    <th>目的</th>
+                    <td>
+                    ・直感的に操作できるサイトで来店につなげる。
+                    </td>
+                </tr>
+                <tr>
+                    <th>コンセプト</th>
+                    <td>
+                    ・来店予約ボタン(CV)を強調し、行動を促すUI設計。<br>
+                    ・余白を多く取り、リラックス感を演出。
+                    </td>
+                </tr>
+            </table>
+            <div class="btn-area">
+                <a href="../../index.html#works" class="btn">一覧へ戻る</a>
+            </div> 
+        </section>
+        <!-- TOPに戻る -->
+        <div class="to-top">
+            <a href="#top">
+                <img class="to-top-logo" src="../../img/footer_logo.png" alt="TOPに戻るロゴ" width="229" height="162">
+                <p>TOPに戻る↑</p>
             </a>
         </div>
-        <div class="footer-center">
+    </main>
+    <!-- フッター -->
+    <footer>
+        <div class="footer-inner">
             <nav>
                 <ul>
-                    <li><a href="../../works/index.html">WORKS</a></li>
-                    <li><a href="../../profile/index.html">PROFILE</a></li>
-                    <li><a href="../../blog/index.html">BLOG</a></li>
-                    <li><a href="../../contact/index.html">CONTACT</a></li>
+                    <li><a href="../../index.html#works">Works</a></li>
+                    <li><a href="../../about/index.html">About</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdgSs6zwG720KqDxa-3g5mPY9G5YZVA9Rm7Rnpzx0e47HyqnA/viewform" target="_blank" rel="noopener noreferrer">Contact</a></li>
                 </ul>
             </nav>
-        </div>
-            <p class="copy">©2025 aokiyayano</p>
+            <p class="copy">©2025aokiyayano</p>
         </div>           
-
     </footer>
-
 </body>
 
 </html>

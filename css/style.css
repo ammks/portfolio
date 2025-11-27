@@ -61,7 +61,7 @@ a.btn {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  padding: 10px;
+  padding: 5px 10px;
   min-width: 140px;
   font-weight: bold;
   border: 2px solid #C41A30;
@@ -401,12 +401,13 @@ footer{
   justify-content: center;
   align-items: center;
   gap: 5%;
+  margin-bottom: 3%;
 }
 .self-con img{
   width: 20%;
 }
 .self-con-txt{
-  width: 50%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -536,23 +537,37 @@ footer{
   height: auto;
   margin-bottom: 15px;
 }
+.works-main-title::before{
+    content: "✦";
+    color: #C41A30;
+    margin-right: 8px;
+    vertical-align: text-top;
+}
+.sub-tag-area{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 2%;
+}
 .works-scroll{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
 }
-.works-scroll-box {
+.works-scroll-box{
   width: 500px;       
-  height: 500px;      
+  height: 600px;      
   overflow-y: scroll; 
   overflow-x: hidden;
   border: 2px solid #494544; 
+  border-radius: 8px;
   scrollbar-width: thin; 
-  scrollbar-color: #C41A30 #fff;
-  flex-shrink: 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  scrollbar-color: #C94253 #fff;
+  cursor: grab;
 }
 .works-scroll-box img {
   width: 100%;
@@ -572,19 +587,19 @@ footer{
   max-width: 1000px;
   margin: 0 auto;
   border-collapse: collapse;
-  border-top: 1px solid #494544;
-  background-color: #fff;
+  border-top: 1px solid #c41a30;
+  margin-bottom: 3%;
 }
 .works-table th,
 .works-table td {
-  border-bottom: 1px solid #494544;
+  border-bottom: 1px solid #C41A30;
   padding: 25px 20px;
   vertical-align: top;
 }
 .works-table th {
   width: 30%;
   background-color: #fff;
-  color: #C41A30;
+  color: #C94253;
   font-weight: bold;
   font-size: 14px;
   letter-spacing: 0.05em;
@@ -594,6 +609,8 @@ footer{
 .works-table td {
   width: 70%;
   text-align: left;
+  background-color: #fff;
+  color: #494544;
 }
 
 /* ------------------スマホ対応------------------
@@ -622,16 +639,35 @@ footer{
     padding: 0 20px;
   }
   /* ABOUT */
+  .self-con{
+    flex-direction: column;
+  }
+  .self-con img{
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  .self-con-txt{
+    width: 80%;
+    gap: 15px;
+  }
   .skills-con {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 7%;
   }
-  .strengths-con-box {
+  .strengths-con-box{
     flex-direction: column;
     text-align: center;
     gap: 20px;
   }
-  /* CONTACT */
+  /* WORKS */
+  .works-main{
+    flex-direction: column;
+    padding: 0 15px;
+    gap: 3%;
+  }
+  .works-scroll{
+    padding: 0 15px;
+  }
 }
